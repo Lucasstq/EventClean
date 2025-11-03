@@ -121,7 +121,7 @@ Os testes utilizam containers Docker automaticamente, garantindo isolamento e re
 A aplicação está hospedada na AWS EC2 com a seguinte infraestrutura:
 
 ### Arquitetura AWS
-
+```
 ┌──────────────────────────────────────┐
 │           VPC (10.0.0.0/16)          │
 │  ┌────────────────────────────────┐  │
@@ -139,14 +139,14 @@ A aplicação está hospedada na AWS EC2 com a seguinte infraestrutura:
 │  - HTTP (80): Público                │
 │  - HTTPS (443): Público              │
 └──────────────────────────────────────┘
-
+```
 ### Especificações da Instância
 
 - **Tipo**: t2.micro
 - **AMI**: Amazon Linux 2023
 - **Região**: sa-east-1 (São Paulo)
 - **IP Público**: `54.233.229.160`
-- **DNS**: `ec2-54-233-229-160.sa-east-1.compute.amazonaws.com`
+- **DNS Público**: `ec2-54-233-229-160.sa-east-1.compute.amazonaws.com`
 
 ### Deploy Manual
 
@@ -225,7 +225,7 @@ Este projeto foi desenvolvido com os seguintes objetivos:
 ## 📝 Notas Adicionais
 
 ### Estrutura de Pastas
-
+```
 src/
 ├── main/
 │   ├── java/com/br/EventClean/
@@ -244,7 +244,7 @@ src/
     ├── java/                  # Testes unitários e integração
     └── resources/
         └── application.properties
-
+```
 ### Dicas de Desenvolvimento
 
 - Use o IntelliJ IDEA para melhor experiência com Spring Boot
