@@ -16,4 +16,4 @@ jobs:
           distribution: 'temurin'
 
       - name: Build project
-        run: mvn clean install -DskipTests
+        run: mvn clean package
